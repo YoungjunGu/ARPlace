@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		EFEEE0CC24441EE3000D1B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEEE0CA24441EE3000D1B78 /* LaunchScreen.storyboard */; };
 		EFEEE0D724441EE3000D1B78 /* ARPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE0D624441EE3000D1B78 /* ARPlaceTests.swift */; };
 		EFEEE0E224441EE3000D1B78 /* ARPlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE0E124441EE3000D1B78 /* ARPlaceUITests.swift */; };
+		EFEEE13A24460273000D1B78 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE13924460273000D1B78 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		EFEEE0DD24441EE3000D1B78 /* ARPlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEEE0E124441EE3000D1B78 /* ARPlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlaceUITests.swift; sourceTree = "<group>"; };
 		EFEEE0E324441EE3000D1B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFEEE13924460273000D1B78 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FEEDAB451E43C6DCDE1C520E /* Pods_ARPlace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARPlace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,7 +103,6 @@
 				C9A3224D6CDCCBD3504C639A /* Pods-ARPlaceTests.debug.xcconfig */,
 				86FD57AA2CCE95E5E6AB65B6 /* Pods-ARPlaceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -186,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				EFEEE0C324441EE1000D1B78 /* ContentView.swift */,
+				EFEEE13924460273000D1B78 /* MainView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -441,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */,
+				EFEEE13A24460273000D1B78 /* MainView.swift in Sources */,
 				EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */,
 				EFEEE0C424441EE1000D1B78 /* ContentView.swift in Sources */,
 			);
@@ -609,10 +612,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ARPlace/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ARPlace/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CLQV3W6FV;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ARPlace/Info.plist;
+				INFOPLIST_FILE = ARPlace/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,10 +634,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ARPlace/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ARPlace/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CLQV3W6FV;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ARPlace/Info.plist;
+				INFOPLIST_FILE = ARPlace/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
