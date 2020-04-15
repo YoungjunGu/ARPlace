@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  NaverMapView.swift
 //  ARPlace
 //
-//  Created by youngjun goo on 2020/04/13.
+//  Created by youngjun goo on 2020/04/15.
 //  Copyright © 2020 youngjun goo. All rights reserved.
 //
 
@@ -32,17 +32,3 @@ struct NaverMapView: UIViewRepresentable {
     func updateUIView(_ uiView: NMFNaverMapView, context: Context) {
     }
 }
-
-struct ContentView: View {
-    var body: some View {
-        NaverMapView()
-    }
-}
-
-#if DEBUG
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif
