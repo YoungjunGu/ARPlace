@@ -15,6 +15,7 @@ enum NetworkError: Error {
 }
 
 extension NetworkError: LocalizedError {
+    /* 여기도 GPSError에 써둔 것을 참고하시면 될것 같아요 */
     var message: String? {
         switch self {
         case .networkConnection:
