@@ -22,7 +22,7 @@
 		EFEEE13C24469C30000D1B78 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE13B24469C30000D1B78 /* NaverMapView.swift */; };
 		EFEEE14424469F6B000D1B78 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14324469F6B000D1B78 /* Place.swift */; };
 		EFEEE14624469F84000D1B78 /* PlaceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14524469F84000D1B78 /* PlaceInput.swift */; };
-		EFEEE14824469FB3000D1B78 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14724469FB3000D1B78 /* LocationData.swift */; };
+		EFEEE14824469FB3000D1B78 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14724469FB3000D1B78 /* Location.swift */; };
 		EFEEE14B2446A087000D1B78 /* GPSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14A2446A087000D1B78 /* GPSError.swift */; };
 		EFEEE14D2446A0BD000D1B78 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14C2446A0BD000D1B78 /* NetworkError.swift */; };
 		EFEEE14F24475571000D1B78 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14E24475571000D1B78 /* APIService.swift */; };
@@ -32,6 +32,9 @@
 		EFEEE157244759BD000D1B78 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE156244759BD000D1B78 /* APIConstants.swift */; };
 		EFEEE15924475AB4000D1B78 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE15824475AB4000D1B78 /* TargetType.swift */; };
 		EFEEE15D24476442000D1B78 /* SearchAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE15C24476442000D1B78 /* SearchAPITarget.swift */; };
+		EFFE1A502448C4180024F128 /* Latlng.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A4F2448C4180024F128 /* Latlng.swift */; };
+		EFFE1A522448C42D0024F128 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A512448C42D0024F128 /* Navigation.swift */; };
+		EFFE1A542448C4FC0024F128 /* LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A532448C4FC0024F128 /* LocalizedError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +81,7 @@
 		EFEEE13B24469C30000D1B78 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		EFEEE14324469F6B000D1B78 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		EFEEE14524469F84000D1B78 /* PlaceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInput.swift; sourceTree = "<group>"; };
-		EFEEE14724469FB3000D1B78 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		EFEEE14724469FB3000D1B78 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EFEEE14A2446A087000D1B78 /* GPSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSError.swift; sourceTree = "<group>"; };
 		EFEEE14C2446A0BD000D1B78 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		EFEEE14E24475571000D1B78 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -88,6 +91,9 @@
 		EFEEE156244759BD000D1B78 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EFEEE15824475AB4000D1B78 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		EFEEE15C24476442000D1B78 /* SearchAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPITarget.swift; sourceTree = "<group>"; };
+		EFFE1A4F2448C4180024F128 /* Latlng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latlng.swift; sourceTree = "<group>"; };
+		EFFE1A512448C42D0024F128 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		EFFE1A532448C4FC0024F128 /* LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedError.swift; sourceTree = "<group>"; };
 		FEEDAB451E43C6DCDE1C520E /* Pods_ARPlace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARPlace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -257,40 +263,19 @@
 		EFEEE13F24469D90000D1B78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EFEEE14224469F4F000D1B78 /* Location */,
-				EFEEE14124469DDA000D1B78 /* Navigation */,
-				EFEEE14024469DB7000D1B78 /* Search */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EFEEE14024469DB7000D1B78 /* Search */ = {
-			isa = PBXGroup;
-			children = (
+				EFFE1A4F2448C4180024F128 /* Latlng.swift */,
+				EFEEE14724469FB3000D1B78 /* Location.swift */,
+				EFFE1A512448C42D0024F128 /* Navigation.swift */,
 				EFEEE14324469F6B000D1B78 /* Place.swift */,
 				EFEEE14524469F84000D1B78 /* PlaceInput.swift */,
 			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		EFEEE14124469DDA000D1B78 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		EFEEE14224469F4F000D1B78 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				EFEEE14724469FB3000D1B78 /* LocationData.swift */,
-			);
-			path = Location;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EFEEE1492446A07B000D1B78 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EFFE1A532448C4FC0024F128 /* LocalizedError.swift */,
 				EFEEE14A2446A087000D1B78 /* GPSError.swift */,
 				EFEEE14C2446A0BD000D1B78 /* NetworkError.swift */,
 				EFEEE156244759BD000D1B78 /* APIConstants.swift */,
@@ -545,14 +530,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFEEE14824469FB3000D1B78 /* LocationData.swift in Sources */,
+				EFEEE14824469FB3000D1B78 /* Location.swift in Sources */,
 				EFEEE13C24469C30000D1B78 /* NaverMapView.swift in Sources */,
 				EFEEE155244758FB000D1B78 /* TargetVersion.swift in Sources */,
 				EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */,
 				EFEEE15924475AB4000D1B78 /* TargetType.swift in Sources */,
+				EFFE1A502448C4180024F128 /* Latlng.swift in Sources */,
 				EFEEE1532447581B000D1B78 /* NetworkManager.swift in Sources */,
 				EFEEE15D24476442000D1B78 /* SearchAPITarget.swift in Sources */,
+				EFFE1A542448C4FC0024F128 /* LocalizedError.swift in Sources */,
 				EFEEE13A24460273000D1B78 /* MainView.swift in Sources */,
+				EFFE1A522448C42D0024F128 /* Navigation.swift in Sources */,
 				EFEEE14F24475571000D1B78 /* APIService.swift in Sources */,
 				EFEEE14424469F6B000D1B78 /* Place.swift in Sources */,
 				EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */,

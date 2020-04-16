@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct NaverSearchAPI {
+public enum NaverSearchAPI {
     static let scheme: String = "https"
     static let host: String = "naveropenapi.apigw.ntruss.com"
     static let path = "/map-place/v1/search"
