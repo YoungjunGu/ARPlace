@@ -22,6 +22,17 @@ struct NaverMapView: UIViewRepresentable {
         return naverMapView
     }
     
-    func updateUIView(_ uiView: NMFNaverMapView, context: Context) {
+    func updateUIView(_ view: NMFNaverMapView, context: Context) {
+        view.delegate = context.coordinator
+    }
+    
+    func makeCoordinator() -> NMapsViewCoordinator {
+        NMapsViewCoordinator(self)
+    }
+}
+
+struct NaverMapView_Previews: PreviewProvider {
+    static var previews: some View {
+        NaverMapView()
     }
 }
