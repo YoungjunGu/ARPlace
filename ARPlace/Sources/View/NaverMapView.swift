@@ -11,16 +11,9 @@ import NMapsMap
 
 struct NaverMapView: UIViewRepresentable {
     
-    var locationManager = CLLocationManager()
-    
-    func setUpManager() {
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestAlwaysAuthorization()
-    }
+    @ObservedObject var viewModel = NMapsViewModel()
     
     func makeUIView(context: Context) -> NMFNaverMapView {
-        setUpManager()
         let naverMapView = NMFNaverMapView()
         naverMapView.positionMode = .disabled
         naverMapView.mapView.zoomLevel = 15

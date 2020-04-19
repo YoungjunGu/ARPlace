@@ -35,6 +35,10 @@
 		EFFE1A502448C4180024F128 /* Latlng.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A4F2448C4180024F128 /* Latlng.swift */; };
 		EFFE1A522448C42D0024F128 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A512448C42D0024F128 /* Navigation.swift */; };
 		EFFE1A542448C4FC0024F128 /* LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A532448C4FC0024F128 /* LocalizedError.swift */; };
+		EFFE1A56244929970024F128 /* NMapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A55244929970024F128 /* NMapsViewModel.swift */; };
+		EFFE1A5A24493AF90024F128 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A5924493AF90024F128 /* LocationManager.swift */; };
+		EFFE1A5C24493BB90024F128 /* LocationManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A5B24493BB90024F128 /* LocationManagerService.swift */; };
+		EFFE1A5F24493CF60024F128 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE1A5E24493CF60024F128 /* Notification+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,10 @@
 		EFFE1A4F2448C4180024F128 /* Latlng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latlng.swift; sourceTree = "<group>"; };
 		EFFE1A512448C42D0024F128 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		EFFE1A532448C4FC0024F128 /* LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedError.swift; sourceTree = "<group>"; };
+		EFFE1A55244929970024F128 /* NMapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapsViewModel.swift; sourceTree = "<group>"; };
+		EFFE1A5924493AF90024F128 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EFFE1A5B24493BB90024F128 /* LocationManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerService.swift; sourceTree = "<group>"; };
+		EFFE1A5E24493CF60024F128 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		FEEDAB451E43C6DCDE1C520E /* Pods_ARPlace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARPlace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,6 +226,7 @@
 		EFEEE0F024441FC0000D1B78 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EFFE1A5D24493CE60024F128 /* Extension */,
 				EFEEE1492446A07B000D1B78 /* Common */,
 				EFEEE13F24469D90000D1B78 /* Model */,
 				EFEEE13E24469D8A000D1B78 /* Network */,
@@ -243,6 +252,7 @@
 				EFEEE0C324441EE1000D1B78 /* ContentView.swift */,
 				EFEEE13924460273000D1B78 /* MainView.swift */,
 				EFEEE13B24469C30000D1B78 /* NaverMapView.swift */,
+				EFFE1A55244929970024F128 /* NMapsViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 				EFEEE15024475580000D1B78 /* HTTPMethod.swift */,
 				EFEEE14E24475571000D1B78 /* APIService.swift */,
 				EFEEE1522447581B000D1B78 /* NetworkManager.swift */,
+				EFFE1A5B24493BB90024F128 /* LocationManagerService.swift */,
+				EFFE1A5924493AF90024F128 /* LocationManager.swift */,
 				EFEEE154244758FB000D1B78 /* TargetVersion.swift */,
 				EFEEE15824475AB4000D1B78 /* TargetType.swift */,
 			);
@@ -289,6 +301,14 @@
 				EFEEE15C24476442000D1B78 /* SearchAPITarget.swift */,
 			);
 			path = Target;
+			sourceTree = "<group>";
+		};
+		EFFE1A5D24493CE60024F128 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFFE1A5E24493CF60024F128 /* Notification+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,13 +557,17 @@
 				EFEEE15924475AB4000D1B78 /* TargetType.swift in Sources */,
 				EFFE1A502448C4180024F128 /* Latlng.swift in Sources */,
 				EFEEE1532447581B000D1B78 /* NetworkManager.swift in Sources */,
+				EFFE1A5A24493AF90024F128 /* LocationManager.swift in Sources */,
 				EFEEE15D24476442000D1B78 /* SearchAPITarget.swift in Sources */,
 				EFFE1A542448C4FC0024F128 /* LocalizedError.swift in Sources */,
+				EFFE1A5C24493BB90024F128 /* LocationManagerService.swift in Sources */,
 				EFEEE13A24460273000D1B78 /* MainView.swift in Sources */,
+				EFFE1A56244929970024F128 /* NMapsViewModel.swift in Sources */,
 				EFFE1A522448C42D0024F128 /* Navigation.swift in Sources */,
 				EFEEE14F24475571000D1B78 /* APIService.swift in Sources */,
 				EFEEE14424469F6B000D1B78 /* Place.swift in Sources */,
 				EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */,
+				EFFE1A5F24493CF60024F128 /* Notification+Extension.swift in Sources */,
 				EFEEE14624469F84000D1B78 /* PlaceInput.swift in Sources */,
 				EFEEE15124475580000D1B78 /* HTTPMethod.swift in Sources */,
 				EFEEE157244759BD000D1B78 /* APIConstants.swift in Sources */,
