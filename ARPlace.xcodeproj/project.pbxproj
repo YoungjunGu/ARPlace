@@ -10,6 +10,10 @@
 		0FF30E89786CB1392D51B67C /* Pods_ARPlace_ARPlaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5FEA87AE74C1BBACD57C2 /* Pods_ARPlace_ARPlaceUITests.framework */; };
 		461A62472FCF5BA93B273472 /* Pods_ARPlace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEDAB451E43C6DCDE1C520E /* Pods_ARPlace.framework */; };
 		749384EDCA6CE2A3F41CBED6 /* Pods_ARPlaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F4F902722B7A931CB1D57 /* Pods_ARPlaceTests.framework */; };
+		EF97A9DB244DE940008B78EF /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */; };
+		EF97A9DD244DE94A008B78EF /* SearchPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */; };
+		EF9E96CC2451ECA000111B00 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E96CB2451ECA000111B00 /* APIService.swift */; };
+		EF9E96CE2451EE4500111B00 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E96CD2451EE4500111B00 /* NetworkManager.swift */; };
 		EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE0BF24441EE1000D1B78 /* AppDelegate.swift */; };
 		EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE0C124441EE1000D1B78 /* SceneDelegate.swift */; };
 		EFEEE0C624441EE3000D1B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEEE0C524441EE3000D1B78 /* Assets.xcassets */; };
@@ -23,9 +27,7 @@
 		EFEEE14824469FB3000D1B78 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14724469FB3000D1B78 /* Location.swift */; };
 		EFEEE14B2446A087000D1B78 /* GPSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14A2446A087000D1B78 /* GPSError.swift */; };
 		EFEEE14D2446A0BD000D1B78 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14C2446A0BD000D1B78 /* NetworkError.swift */; };
-		EFEEE14F24475571000D1B78 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE14E24475571000D1B78 /* APIService.swift */; };
 		EFEEE15124475580000D1B78 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE15024475580000D1B78 /* HTTPMethod.swift */; };
-		EFEEE1532447581B000D1B78 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE1522447581B000D1B78 /* NetworkManager.swift */; };
 		EFEEE155244758FB000D1B78 /* TargetVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE154244758FB000D1B78 /* TargetVersion.swift */; };
 		EFEEE157244759BD000D1B78 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE156244759BD000D1B78 /* APIConstants.swift */; };
 		EFEEE15924475AB4000D1B78 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE15824475AB4000D1B78 /* TargetType.swift */; };
@@ -65,6 +67,10 @@
 		C9A3224D6CDCCBD3504C639A /* Pods-ARPlaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARPlaceTests.debug.xcconfig"; path = "Target Support Files/Pods-ARPlaceTests/Pods-ARPlaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E5FEA87AE74C1BBACD57C2 /* Pods_ARPlace_ARPlaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARPlace_ARPlaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE57B043167555CAC0D344E /* Pods-ARPlace-ARPlaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARPlace-ARPlaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARPlace-ARPlaceUITests/Pods-ARPlace-ARPlaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
+		EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceView.swift; sourceTree = "<group>"; };
+		EF9E96CB2451ECA000111B00 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EF9E96CD2451EE4500111B00 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EFC50AF011A66C9C1CF72ED8 /* Pods-ARPlace-ARPlaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARPlace-ARPlaceUITests.release.xcconfig"; path = "Target Support Files/Pods-ARPlace-ARPlaceUITests/Pods-ARPlace-ARPlaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EFEEE0BC24441EE1000D1B78 /* ARPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEEE0BF24441EE1000D1B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,9 +91,7 @@
 		EFEEE14724469FB3000D1B78 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EFEEE14A2446A087000D1B78 /* GPSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSError.swift; sourceTree = "<group>"; };
 		EFEEE14C2446A0BD000D1B78 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		EFEEE14E24475571000D1B78 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EFEEE15024475580000D1B78 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		EFEEE1522447581B000D1B78 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EFEEE154244758FB000D1B78 /* TargetVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetVersion.swift; sourceTree = "<group>"; };
 		EFEEE156244759BD000D1B78 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EFEEE15824475AB4000D1B78 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 				EFEEE13B24469C30000D1B78 /* NaverMapView.swift */,
 				EFFE1A55244929970024F128 /* NMapsViewModel.swift */,
 				EFFE1A60244CA2DD0024F128 /* NMapsViewCoordinator.swift */,
+				EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */,
+				EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,12 +265,12 @@
 			children = (
 				EFEEE15B24476430000D1B78 /* Target */,
 				EFEEE15024475580000D1B78 /* HTTPMethod.swift */,
-				EFEEE14E24475571000D1B78 /* APIService.swift */,
-				EFEEE1522447581B000D1B78 /* NetworkManager.swift */,
-				EFFE1A5B24493BB90024F128 /* LocationManagerService.swift */,
-				EFFE1A5924493AF90024F128 /* LocationManager.swift */,
+				EF9E96CB2451ECA000111B00 /* APIService.swift */,
+				EF9E96CD2451EE4500111B00 /* NetworkManager.swift */,
 				EFEEE154244758FB000D1B78 /* TargetVersion.swift */,
 				EFEEE15824475AB4000D1B78 /* TargetType.swift */,
+				EFFE1A5B24493BB90024F128 /* LocationManagerService.swift */,
+				EFFE1A5924493AF90024F128 /* LocationManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -548,27 +554,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEEE14824469FB3000D1B78 /* Location.swift in Sources */,
+				EF97A9DD244DE94A008B78EF /* SearchPlaceView.swift in Sources */,
 				EFEEE13C24469C30000D1B78 /* NaverMapView.swift in Sources */,
 				EFEEE155244758FB000D1B78 /* TargetVersion.swift in Sources */,
 				EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */,
 				EFEEE15924475AB4000D1B78 /* TargetType.swift in Sources */,
 				EFFE1A502448C4180024F128 /* Latlng.swift in Sources */,
-				EFEEE1532447581B000D1B78 /* NetworkManager.swift in Sources */,
 				EFFE1A5A24493AF90024F128 /* LocationManager.swift in Sources */,
 				EFEEE15D24476442000D1B78 /* SearchAPITarget.swift in Sources */,
 				EFFE1A542448C4FC0024F128 /* LocalizedError.swift in Sources */,
 				EFFE1A5C24493BB90024F128 /* LocationManagerService.swift in Sources */,
 				EFFE1A56244929970024F128 /* NMapsViewModel.swift in Sources */,
 				EFFE1A522448C42D0024F128 /* Navigation.swift in Sources */,
-				EFEEE14F24475571000D1B78 /* APIService.swift in Sources */,
 				EFFE1A61244CA2DD0024F128 /* NMapsViewCoordinator.swift in Sources */,
 				EFEEE14424469F6B000D1B78 /* Place.swift in Sources */,
 				EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */,
 				EFFE1A5F24493CF60024F128 /* Notification+Extension.swift in Sources */,
 				EFEEE14624469F84000D1B78 /* PlaceInput.swift in Sources */,
 				EFEEE15124475580000D1B78 /* HTTPMethod.swift in Sources */,
+				EF97A9DB244DE940008B78EF /* SearchPlaceViewModel.swift in Sources */,
 				EFEEE157244759BD000D1B78 /* APIConstants.swift in Sources */,
 				EFEEE14B2446A087000D1B78 /* GPSError.swift in Sources */,
+				EF9E96CE2451EE4500111B00 /* NetworkManager.swift in Sources */,
+				EF9E96CC2451ECA000111B00 /* APIService.swift in Sources */,
 				EFEEE14D2446A0BD000D1B78 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

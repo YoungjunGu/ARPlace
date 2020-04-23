@@ -17,18 +17,18 @@ extension TargetVersion {
     var scheme: String {
         switch self {
         case .directionAPI:
-            return NaverDirectionAPI.scheme
+            return NaverDirectionAPI.scheme.rawValue
         case .searchAPI:
-            return NaverSearchAPI.scheme
+            return NaverSearchAPI.scheme.rawValue
         }
     }
     
     var host: String {
         switch self {
         case .directionAPI:
-            return NaverDirectionAPI.host
+            return NaverDirectionAPI.host.rawValue
         case .searchAPI:
-            return NaverSearchAPI.host
+            return NaverSearchAPI.host.rawValue
         }
     }
 }

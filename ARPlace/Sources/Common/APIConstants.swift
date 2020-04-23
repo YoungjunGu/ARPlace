@@ -8,27 +8,27 @@
 
 import Foundation
 
-public enum NaverSearchAPI {
-    static let scheme: String = "https"
-    static let host: String = "naveropenapi.apigw.ntruss.com"
-    static let path = "/map-place/v1/search"
+public enum NaverSearchAPI: String {
+    case scheme = "https"
+    case host = "naveropenapi.apigw.ntruss.com"
+    case path = "/map-place/v1/search"
     // Naver Search
-    static let NSLbaseURL: String = "https://naveropenapi.apigw.ntruss.com/map-place/v1/search"
-    static let NSLClientIdHeader: String = "X-NCP-APIGW-API-KEY-ID"
-    static let NSLClientSecretHeader: String = "X-NCP-APIGW-API-KEY"
+    case NSLbaseURL = "https://naveropenapi.apigw.ntruss.com/map-place/v1/search"
+    case NSLClientIdHeader = "X-NCP-APIGW-API-KEY-ID"
+    case NSLClientSecretHeader = "X-NCP-APIGW-API-KEY"
 }
 
-public struct NaverDirectionAPI {
-    static let scheme: String = "https"
-    static let host: String = "naveropenapi.apigw.ntruss.com"
-    static let path: String = "map-direction/v1/driving"
+public enum NaverDirectionAPI: String {
+    case scheme = "https"
+    case host = "naveropenapi.apigw.ntruss.com"
+    case path = "map-direction/v1/driving"
     // Naver Driving
-    static let NMFClientId: String = "NMFClientId"
-    static let NMFClientSecret: String = "NMFClientSecret"
-    static let NMbaseURL: String = "https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving"
-    static let NMClientIdHeader: String = "X-NCP-APIGW-API-KEY-ID"
-    static let NMClientSecretHeader: String = "X-NCP-APIGW-API-KEY"
-    static let trafast: String = "trafast"
+    case NMFClientId = "NMFClientId"
+    case NMFClientSecret = "NMFClientSecret"
+    case NMbaseURL = "https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving"
+    case NMClientIdHeader = "X-NCP-APIGW-API-KEY-ID"
+    case NMClientSecretHeader = "X-NCP-APIGW-API-KEY"
+    case trafast = "trafast"
 }
 
 
