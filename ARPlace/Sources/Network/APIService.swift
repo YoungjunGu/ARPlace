@@ -2,7 +2,7 @@
 //  APIService.swift
 //  ARPlace
 //
-//  Created by youngjun goo on 2020/04/15.
+//  Created by youngjun goo on 2020/04/24.
 //  Copyright © 2020 youngjun goo. All rights reserved.
 //
 
@@ -24,11 +24,11 @@ final class APIServiceImpl: APIService {
         Just(input)
             .map { SearchAPITarget(parameter: ["query": $0.query,
                                                "coordinate": $0.coordinate.convertString]) }
-            .setFailureType(to: Error.self)
+            .setFailureType(to: NetworkError.self)
             .flatMap(networkManager.request(_:))
             .map(\.data)
             .decode(type: [PlaceInfo].self, decoder: JSONDecoder())
+            .mapError { $0 as Error }
             .eraseToAnyPublisher()
     }
 }
-

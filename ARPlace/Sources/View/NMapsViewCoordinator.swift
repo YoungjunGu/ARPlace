@@ -19,4 +19,9 @@ class NMapsViewCoordinator: NSObject, NMFMapViewDelegate {
     func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
         print(latlng)
     }
+    
+    func mapView(_ mapView: NMFMapView, didTap symbol: NMFSymbol) -> Bool {
+        print(symbol)
+        return true
+    }
 }
