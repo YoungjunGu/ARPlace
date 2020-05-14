@@ -10,6 +10,10 @@
 		0FF30E89786CB1392D51B67C /* Pods_ARPlace_ARPlaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5FEA87AE74C1BBACD57C2 /* Pods_ARPlace_ARPlaceUITests.framework */; };
 		461A62472FCF5BA93B273472 /* Pods_ARPlace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEDAB451E43C6DCDE1C520E /* Pods_ARPlace.framework */; };
 		749384EDCA6CE2A3F41CBED6 /* Pods_ARPlaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F4F902722B7A931CB1D57 /* Pods_ARPlaceTests.framework */; };
+		EF1BE3C7246AE9B000B18975 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3C6246AE9B000B18975 /* ARView.swift */; };
+		EF1BE3C9246D86F300B18975 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3C8246D86F300B18975 /* UpdateList.swift */; };
+		EF1BE3CB246D871400B18975 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3CA246D871400B18975 /* UpdateDetail.swift */; };
+		EF1BE3CD246D873B00B18975 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3CC246D873B00B18975 /* UpdateStore.swift */; };
 		EF97A9DB244DE940008B78EF /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */; };
 		EF97A9DD244DE94A008B78EF /* SearchPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */; };
 		EF9E96CC2451ECA000111B00 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E96CB2451ECA000111B00 /* APIService.swift */; };
@@ -67,6 +71,10 @@
 		C9A3224D6CDCCBD3504C639A /* Pods-ARPlaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARPlaceTests.debug.xcconfig"; path = "Target Support Files/Pods-ARPlaceTests/Pods-ARPlaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E5FEA87AE74C1BBACD57C2 /* Pods_ARPlace_ARPlaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARPlace_ARPlaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE57B043167555CAC0D344E /* Pods-ARPlace-ARPlaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARPlace-ARPlaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARPlace-ARPlaceUITests/Pods-ARPlace-ARPlaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF1BE3C6246AE9B000B18975 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		EF1BE3C8246D86F300B18975 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
+		EF1BE3CA246D871400B18975 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
+		EF1BE3CC246D873B00B18975 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
 		EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceView.swift; sourceTree = "<group>"; };
 		EF9E96CB2451ECA000111B00 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -256,6 +264,10 @@
 				EFFE1A60244CA2DD0024F128 /* NMapsViewCoordinator.swift */,
 				EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */,
 				EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */,
+				EF1BE3C6246AE9B000B18975 /* ARView.swift */,
+				EF1BE3C8246D86F300B18975 /* UpdateList.swift */,
+				EF1BE3CA246D871400B18975 /* UpdateDetail.swift */,
+				EF1BE3CC246D873B00B18975 /* UpdateStore.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -554,11 +566,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEEE14824469FB3000D1B78 /* Location.swift in Sources */,
+				EF1BE3C7246AE9B000B18975 /* ARView.swift in Sources */,
 				EF97A9DD244DE94A008B78EF /* SearchPlaceView.swift in Sources */,
 				EFEEE13C24469C30000D1B78 /* NaverMapView.swift in Sources */,
+				EF1BE3CD246D873B00B18975 /* UpdateStore.swift in Sources */,
 				EFEEE155244758FB000D1B78 /* TargetVersion.swift in Sources */,
 				EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */,
 				EFEEE15924475AB4000D1B78 /* TargetType.swift in Sources */,
+				EF1BE3CB246D871400B18975 /* UpdateDetail.swift in Sources */,
 				EFFE1A502448C4180024F128 /* Latlng.swift in Sources */,
 				EFFE1A5A24493AF90024F128 /* LocationManager.swift in Sources */,
 				EFEEE15D24476442000D1B78 /* SearchAPITarget.swift in Sources */,
@@ -569,6 +584,7 @@
 				EFFE1A61244CA2DD0024F128 /* NMapsViewCoordinator.swift in Sources */,
 				EFEEE14424469F6B000D1B78 /* Place.swift in Sources */,
 				EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */,
+				EF1BE3C9246D86F300B18975 /* UpdateList.swift in Sources */,
 				EFFE1A5F24493CF60024F128 /* Notification+Extension.swift in Sources */,
 				EFEEE14624469F84000D1B78 /* PlaceInput.swift in Sources */,
 				EFEEE15124475580000D1B78 /* HTTPMethod.swift in Sources */,

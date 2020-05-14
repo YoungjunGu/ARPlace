@@ -40,12 +40,12 @@ final class SearchPlaceViewModel: ObservableObject {
             .assign(to: \.isLoading, on: self)
             .store(in: &cancellables)
         
-        let response = searchTrigger
-            .flatMap { (query) -> AnyPublisher<[PlaceInfo], Never> in
-                // [TEST]
-                print("searchString:",query)
-                return apiService.searchPlaces(input: query)
-        }
+//        let response = searchTrigger
+//            .flatMap { (query) -> AnyPublisher<[PlaceInfo], Never> in
+//                // [TEST]
+//                return apiService.searchPlaces(input: query)
+//                
+//        }
         
         
     }
