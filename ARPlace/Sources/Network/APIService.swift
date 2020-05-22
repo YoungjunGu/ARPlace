@@ -30,5 +30,6 @@ final class APIServiceImpl: APIService {
             .decode(type: [PlaceInfo].self, decoder: JSONDecoder())
             .mapError { $0 as Error }
             .eraseToAnyPublisher()
+        
     }
 }

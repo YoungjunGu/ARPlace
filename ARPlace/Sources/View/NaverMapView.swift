@@ -17,7 +17,7 @@ struct NaverMapView: UIViewRepresentable {
         let naverMapView = NMFNaverMapView()
         naverMapView.positionMode = .disabled
         naverMapView.mapView.zoomLevel = 15
-        naverMapView.showLocationButton = false
+        naverMapView.showLocationButton = true
         naverMapView.showIndoorLevelPicker = true
         return naverMapView
     }

@@ -16,10 +16,14 @@
 		EF1BE3CD246D873B00B18975 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3CC246D873B00B18975 /* UpdateStore.swift */; };
 		EF1BE3CF246D890400B18975 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3CE246D890400B18975 /* MainHomeView.swift */; };
 		EF1BE3D1246D8CA200B18975 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BE3D0246D8CA200B18975 /* Settings.swift */; };
+		EF9531252472E5EB0057FB1B /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9531242472E5EB0057FB1B /* ARViewController.swift */; };
 		EF97A9DB244DE940008B78EF /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */; };
 		EF97A9DD244DE94A008B78EF /* SearchPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */; };
 		EF9E96CC2451ECA000111B00 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E96CB2451ECA000111B00 /* APIService.swift */; };
 		EF9E96CE2451EE4500111B00 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E96CD2451EE4500111B00 /* NetworkManager.swift */; };
+		EFA34D6F2478164800B5131C /* SearchPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA34D6E2478164800B5131C /* SearchPlaceCell.swift */; };
+		EFA34DB12478357200B5131C /* SearchPlaceBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA34DB02478357200B5131C /* SearchPlaceBar.swift */; };
+		EFA34DB3247840D900B5131C /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA34DB2247840D900B5131C /* PlaceDetailView.swift */; };
 		EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE0BF24441EE1000D1B78 /* AppDelegate.swift */; };
 		EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEE0C124441EE1000D1B78 /* SceneDelegate.swift */; };
 		EFEEE0C624441EE3000D1B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEEE0C524441EE3000D1B78 /* Assets.xcassets */; };
@@ -79,10 +83,14 @@
 		EF1BE3CC246D873B00B18975 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		EF1BE3CE246D890400B18975 /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
 		EF1BE3D0246D8CA200B18975 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EF9531242472E5EB0057FB1B /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
 		EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceView.swift; sourceTree = "<group>"; };
 		EF9E96CB2451ECA000111B00 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EF9E96CD2451EE4500111B00 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EFA34D6E2478164800B5131C /* SearchPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceCell.swift; sourceTree = "<group>"; };
+		EFA34DB02478357200B5131C /* SearchPlaceBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceBar.swift; sourceTree = "<group>"; };
+		EFA34DB2247840D900B5131C /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 		EFC50AF011A66C9C1CF72ED8 /* Pods-ARPlace-ARPlaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARPlace-ARPlaceUITests.release.xcconfig"; path = "Target Support Files/Pods-ARPlace-ARPlaceUITests/Pods-ARPlace-ARPlaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EFEEE0BC24441EE1000D1B78 /* ARPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEEE0BF24441EE1000D1B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +176,14 @@
 				093F4F902722B7A931CB1D57 /* Pods_ARPlaceTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF9531232472E5CC0057FB1B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF9531242472E5EB0057FB1B /* ARViewController.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		EFEEE0B324441EE1000D1B78 = {
@@ -263,17 +279,21 @@
 		EFEEE13D24469D7C000D1B78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF9531232472E5CC0057FB1B /* UIKit */,
 				EF1BE3CE246D890400B18975 /* MainHomeView.swift */,
 				EFEEE13B24469C30000D1B78 /* NaverMapView.swift */,
 				EFFE1A55244929970024F128 /* NMapsViewModel.swift */,
 				EFFE1A60244CA2DD0024F128 /* NMapsViewCoordinator.swift */,
 				EF97A9DC244DE94A008B78EF /* SearchPlaceView.swift */,
 				EF97A9DA244DE940008B78EF /* SearchPlaceViewModel.swift */,
-				EF1BE3C6246AE9B000B18975 /* ARView.swift */,
+				EFA34D6E2478164800B5131C /* SearchPlaceCell.swift */,
+				EFA34DB02478357200B5131C /* SearchPlaceBar.swift */,
 				EF1BE3C8246D86F300B18975 /* UpdateList.swift */,
 				EF1BE3CA246D871400B18975 /* UpdateDetail.swift */,
 				EF1BE3CC246D873B00B18975 /* UpdateStore.swift */,
 				EF1BE3D0246D8CA200B18975 /* Settings.swift */,
+				EF1BE3C6246AE9B000B18975 /* ARView.swift */,
+				EFA34DB2247840D900B5131C /* PlaceDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,8 +594,11 @@
 				EFEEE14824469FB3000D1B78 /* Location.swift in Sources */,
 				EF1BE3C7246AE9B000B18975 /* ARView.swift in Sources */,
 				EF97A9DD244DE94A008B78EF /* SearchPlaceView.swift in Sources */,
+				EF9531252472E5EB0057FB1B /* ARViewController.swift in Sources */,
 				EFEEE13C24469C30000D1B78 /* NaverMapView.swift in Sources */,
 				EF1BE3CF246D890400B18975 /* MainHomeView.swift in Sources */,
+				EFA34D6F2478164800B5131C /* SearchPlaceCell.swift in Sources */,
+				EFA34DB12478357200B5131C /* SearchPlaceBar.swift in Sources */,
 				EF1BE3CD246D873B00B18975 /* UpdateStore.swift in Sources */,
 				EFEEE155244758FB000D1B78 /* TargetVersion.swift in Sources */,
 				EFEEE0C024441EE1000D1B78 /* AppDelegate.swift in Sources */,
@@ -593,6 +616,7 @@
 				EFEEE0C224441EE1000D1B78 /* SceneDelegate.swift in Sources */,
 				EF1BE3C9246D86F300B18975 /* UpdateList.swift in Sources */,
 				EFFE1A5F24493CF60024F128 /* Notification+Extension.swift in Sources */,
+				EFA34DB3247840D900B5131C /* PlaceDetailView.swift in Sources */,
 				EFEEE14624469F84000D1B78 /* PlaceInput.swift in Sources */,
 				EFEEE15124475580000D1B78 /* HTTPMethod.swift in Sources */,
 				EF97A9DB244DE940008B78EF /* SearchPlaceViewModel.swift in Sources */,

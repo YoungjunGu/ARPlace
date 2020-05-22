@@ -82,8 +82,12 @@ struct MenuRight: View {
                     CircleButton(icon: "person.crop.circle")
                 }
                 Button(action: { self.showUpdate.toggle() }) {
-                    CircleButton(icon: "bell")
-                        .sheet(isPresented: self.$showUpdate) { UpdateList() }
+                    CircleButton(icon: "")
+                        .sheet(isPresented: self.$showUpdate) { SearchPlaceView() }
+                }
+                Button(action: { self.show.toggle() }) {
+                    CircleButton(icon: "arkit")
+                        //.sheet(isPresented: self.$showUpdate) { ARView() }
                 }
             }
             Spacer()

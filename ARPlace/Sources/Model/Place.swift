@@ -14,6 +14,7 @@ struct Place: Codable {
 }
 
 struct PlaceInfo: Codable {
+    let id = UUID()
     let name: String?
     let roadAddress: String?
     let jibunAddress: String?
